@@ -1,0 +1,577 @@
+.banner{
+    width: 100%;
+    height: 720px;
+
+    overflow: hidden;
+    perspective: 100px;
+
+    animation: rubberBand 1s forwards;
+
+}
+
+.space-think{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: #212529;
+}
+
+.space-think-header, .space-think-footer{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 10px;
+    left: 0%;
+    background-color: #212529;
+}
+.space-think-header{
+    top: 0%;
+}
+.space-think-footer{
+    bottom: 0%;
+}
+
+.space-think-content{
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: 20%;
+    width: 60%;
+    background-color: #212529;
+    animation: dichuyentutu 14s linear forwards;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.space-think-content.spa{
+    animation-delay: 1s;
+}
+.space-think-content.sps{
+    animation-delay: 3s;
+}
+.space-think-content.spp{
+    animation-delay: 6s;
+}
+.space-think-content.spc{
+    animation-delay: 3s;
+}
+
+
+.space-think-content p{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+@-webkit-keyframes dichuyentutu{
+    0%{ transform: translateY(70px); opacity: 1;}
+    100%{ transform: translateY(-30px); opacity: 1;};
+}
+
+.banner img.vutru{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    /* animation: zoom-create 1s forwards; */
+}
+
+
+.banner img.tien2{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 45%;
+    height: 65%;
+    opacity: 0;
+
+    z-index: 4;
+    animation: down-create 1s forwards;
+    animation-delay: 1.8s;
+}
+
+.hopthoai{
+    position: absolute;
+    right: 5%;
+    bottom: 67%;
+    width: 15%;
+    height: 25%;
+    padding: 1.5%;
+    font-size: 17px;
+    font-family: 'Kaushan Script', cursive;
+
+    background-color: white;
+    border-radius: 30px 30px 30px 2px;
+    z-index: 4;
+    opacity: 0;
+
+    animation: bounceIn 2s forwards;
+    animation-delay: 2.5s;
+
+
+}
+
+.hanhtinh1{
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width:15%;
+    height:15%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: jumpToLeft-create 1s forwards;
+    animation-delay: 1.1s;
+}
+
+.hanhtinh2{
+    position: absolute;
+    left: 48%;
+    top: 14%;
+    width:23%;
+    height:23%;
+    z-index: 4;
+    opacity: 0;
+
+    animation: up-create 1s forwards;
+    animation-delay: 1.2s;
+}
+
+.phithuyen{
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    width:10%;
+    height:10%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: down-create 1s forwards;
+    animation-delay: 1.3s;
+}
+
+
+
+.saotrang{
+    position: absolute;
+    left: 20%;
+    bottom: 17%;
+    width:5%;
+    height:5%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 3s forwards;
+    animation-iteration-count: infinite;
+}
+
+.saotrang2{
+    position: absolute;
+    left: 40%;
+    bottom: 57%;
+    width:3%;
+    height:3%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 2s forwards;
+    animation-iteration-count: infinite;
+}
+.saotrang3{
+    position: absolute;
+    left: 5%;
+    bottom: 27%;
+    width:5%;
+    height:5%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 4s forwards;
+    animation-iteration-count: infinite;
+}
+.saotrang4{
+    position: absolute;
+    left: 18%;
+    bottom: 77%;
+    width:3%;
+    height:3%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 3.5s forwards;
+    animation-iteration-count: infinite;
+}
+.saotrang5{
+    position: absolute;
+    left: 80%;
+    bottom: 60%;
+    width:5%;
+    height:5%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 2.5s forwards;
+    animation-iteration-count: infinite;
+}
+.saotrang6{
+    position: absolute;
+    left: 58%;
+    bottom: 37%;
+    width:5%;
+    height:5%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 1s forwards;
+    animation-iteration-count: infinite;
+}
+.saotrang7{
+    position: absolute;
+    left: 47%;
+    bottom: 17%;
+    width:3%;
+    height:3%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 3s forwards;
+    animation-iteration-count: infinite;
+}
+.saotrang8{
+    position: absolute;
+    left: 70%;
+    bottom: 87%;
+    width:5%;
+    height:5%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: phongtothunho 2s forwards;
+    animation-iteration-count: infinite;
+}
+
+.saoxanh{
+    position: absolute;
+    left: 25%;
+    bottom: 70%;
+    width:12%;
+    height:12%;
+    z-index: 3;
+    opacity: 0;
+    transition: 1s;
+
+    animation: phongtothunho 3s forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.cham{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    width:5%;
+    height:4%;
+    z-index: 3;
+
+    animation: phongtothunho 3s forwards;
+    animation-iteration-count: infinite;
+}
+.cham2{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    width:4%;
+    height:5%;
+    z-index: 3;
+
+    animation: phongtothunho 2s forwards;
+    animation-iteration-count: infinite;
+}
+.cham3{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    width:5%;
+    height:3%;
+    z-index: 3;
+
+    animation: phongtothunho 3.5s forwards;
+    animation-iteration-count: infinite;
+}
+.cham4{
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    width:4%;
+    height:3%;
+    z-index: 3;
+
+    animation: phongtothunho 1.5s forwards;
+    animation-iteration-count: infinite;
+}
+.cham5{
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    width:5%;
+    height:4%;
+    z-index: 3;
+
+    animation: phongtothunho 2s forwards;
+    animation-iteration-count: infinite;
+}
+.cham6{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width:4%;
+    height:4%;
+    z-index: 3;
+
+    animation: phongtothunho 1s forwards;
+    animation-iteration-count: infinite;
+}
+.cham7{
+    position: absolute;
+    left: 95%;
+    top: 40%;
+    width:3%;
+    height:4%;
+    z-index: 3;
+
+    animation: phongtothunho 3s forwards;
+    animation-iteration-count: infinite;
+}
+.cham8{
+    position: absolute;
+    left: 30%;
+    top: 0%;
+    width:4%;
+    height:3%;
+    z-index: 3;
+
+    animation: phongtothunho 3.5s forwards;
+    animation-iteration-count: infinite;
+}
+.cham9{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width:5%;
+    height:4%;
+    z-index: 3;
+
+    animation: phongtothunho 2s forwards;
+    animation-iteration-count: infinite;
+}
+.cham10{
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    width:3%;
+    height:3%;
+    z-index: 3;
+
+    animation: phongtothunho 2.5s forwards;
+    animation-iteration-count: infinite;
+}
+.cham11{
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    width:4%;
+    height:3%;
+    z-index: 3;
+
+    animation: phongtothunho 3.5s forwards;
+    animation-iteration-count: infinite;
+}
+.cham12{
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width:3%;
+    height:2%;
+    z-index: 3;
+
+    animation: phongtothunho 1.5s forwards;
+    animation-iteration-count: infinite;
+}
+.cham13{
+    position: absolute;
+    left: 65%;
+    top: 15%;
+    width:3%;
+    height:4%;
+    z-index: 3;
+
+    animation: phongtothunho 1s forwards;
+    animation-iteration-count: infinite;
+}
+.cham14{
+    position: absolute;
+    left: 90%;
+    top: 5%;
+    width:2%;
+    height:3%;
+    z-index: 4;
+
+    animation: phongtothunho 2s forwards;
+    animation-iteration-count: infinite;
+}
+
+.hanhtinhvang{
+    position: absolute;
+    left: 85%;
+    bottom: 27%;
+    width:15%;
+    height:26%;
+    z-index: 4;
+    opacity: 0;
+
+    animation: jumpToRight-create 1s forwards;
+    animation-delay: 1.2s;
+}
+
+.nen{
+    position: absolute;
+    left: 23%;
+    bottom: 0%;
+    width:45%;
+    height:25%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: down-create 1s forwards;
+    animation-delay: 1.4s;
+}
+
+.xe{
+    position: absolute;
+    left: 34%;
+    bottom: 10%;
+    width:20%;
+    height:24%;
+    z-index: 4;
+    opacity: 0;
+
+    animation: up-create 1s forwards;
+    animation-delay: 1.5s;
+}
+
+.saobang{
+    position: absolute;
+    left: -10%;
+    top: 0%;
+    width:10%;
+    height:7%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: saobang 3s forwards;
+    animation-delay: 6s;
+
+}
+.saobang2{
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    width:10%;
+    height:7%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: saobang 3s forwards;
+    animation-delay: 9s;
+
+}
+.saobang3{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width:10%;
+    height:7%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: saobang 4s forwards;
+    animation-delay: 13s;
+
+}
+.saobang4{
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width:10%;
+    height:7%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: saobang 4s forwards;
+    animation-delay: 17s;
+
+}
+.saobang5{
+    position: absolute;
+    left: 70%;
+    top: 0%;
+    width:10%;
+    height:7%;
+    z-index: 3;
+    opacity: 0;
+
+    animation: saobang 5s forwards;
+    animation-delay: 20s;
+
+}
+
+.taubay{
+    position: absolute;
+    left: 50%;
+    bottom: -5%;
+    width:15%;
+    height:40%;
+    z-index: 5;
+
+    opacity: 0;
+    transform: scale(0);
+
+
+
+    animation: taubay-bay 5s linear forwards;
+    animation-delay: 1.7s;
+    /* animation-fill-mode: both; */
+
+}
+
+@-webkit-keyframes taubay-bay{
+    0%{
+        transform:rotate(80deg)
+                translate(0px)
+                scale(0)
+                ; opacity: 1;
+    }
+    100%{
+        transform:rotate(30deg)
+                translate(-1300px)
+                scale(1.3); opacity: 1;
+    }
+}
+
+@-webkit-keyframes phongtothunho{
+    0%{ opacity: 0}
+    50%{ opacity: 1}
+    100%{ opacity: 0};
+}
+
+@-webkit-keyframes saobang{
+    0%{ transform: translate3d(0px, 0px, 0px) scale(0.5); opacity: 1; }
+    100%{ transform: translate3d(1500px, 500px, 20px) scale(1); opacity: 1; };
+}
